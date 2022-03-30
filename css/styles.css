@@ -1,0 +1,19 @@
+nav ul{
+    border-color: blue;
+    background-color: chocolate;
+    
+    float: left;
+    padding: 20px;
+    width: 97%;
+}
+
+nav ul#menu{
+    border-color: blue;
+    background-color: chocolate;
+    list-style-type: none;
+}
+
+nav ul#menu li{
+    float: left;
+    padding: 20px;
+}
