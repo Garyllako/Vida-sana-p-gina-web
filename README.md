@@ -1,2 +1,7 @@
-# Vida-sana-p-gina-web
+# Vida-sana-pagina-web
 Proyecto ingeniería web
+
+Integrantes:
+-Fabián Lastra
+-Luciano Donoso
+-Ignacio Gary
