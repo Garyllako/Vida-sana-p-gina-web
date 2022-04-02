@@ -1,26 +1,4 @@
-<<<<<<< Updated upstream
-nav ul{
-    border-color: blue;
-    background-color: chocolate;
-    
-    float: left;
-    padding: 20px;
-    width: 97%;
-}
-
-nav ul#menu{
-    border-color: blue;
-    background-color: chocolate;
-    list-style-type: none;
-}
-
-nav ul#menu li{
-    float: left;
-    padding: 20px;
-}
-=======
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
 
 * {
   margin: 0;
@@ -290,5 +268,7 @@ h1{
 
 /*termino footer*/
 
-
->>>>>>> Stashed changes
+/*Photos*/
+.container img{
+  border-radius: 10px;
+}
