@@ -9,6 +9,7 @@ import { ContactoScreenComponent } from './screens/contacto-screen/contacto-scre
 import { RutinaScreenComponent } from './screens/rutina-screen/rutina-screen.component';
 import { RecetaScreenComponent } from './screens/receta-screen/receta-screen.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
     ContactoScreenComponent,
     RutinaScreenComponent,
     RecetaScreenComponent,
-    HomeScreenComponent
+    HomeScreenComponent,
+    LoginScreenComponent
   ],
   imports: [
     BrowserModule,
