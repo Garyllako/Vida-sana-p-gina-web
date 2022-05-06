@@ -4,6 +4,7 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
 import { RecetaScreenComponent } from './screens/receta-screen/receta-screen.component';
 import { RutinaScreenComponent } from './screens/rutina-screen/rutina-screen.component';
 import { ContactoScreenComponent } from './screens/contacto-screen/contacto-screen.component';
+import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'recetas', component: RecetaScreenComponent },
   { path: 'rutinas', component: RutinaScreenComponent },
   { path: 'contacto', component: ContactoScreenComponent },
+  { path: 'login', component: LoginScreenComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
