@@ -10,6 +10,10 @@ import { RutinaScreenComponent } from './screens/rutina-screen/rutina-screen.com
 import { RecetaScreenComponent } from './screens/receta-screen/receta-screen.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { LoginScreenComponent } from './screens/login-screen/login-screen.component';
+import { SigninScreenComponent } from './screens/signin-screen/signin-screen.component';
+import { ListComponentComponent } from './components/list-component/list-component.component';
+import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { LoginScreenComponent } from './screens/login-screen/login-screen.compon
     RutinaScreenComponent,
     RecetaScreenComponent,
     HomeScreenComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    SigninScreenComponent,
+    GaleriaScreenComponent,
+    ListComponentComponent
   ],
   imports: [
     BrowserModule,

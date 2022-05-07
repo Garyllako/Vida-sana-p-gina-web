@@ -1,0 +1,31 @@
+body {
+    background: #f4f4f4;
+}
+
+.banner {
+background: #a770ef;
+background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+}
+
+
+#fotos{
+  display:  flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#fotos li{
+  margin: 20px;
+}
+
+#fotos li img{
+  width: 376px;
+  height: 250.66px;
+}
+
+ul#fotos {
+  box-sizing: content-box;
+}
+
+
