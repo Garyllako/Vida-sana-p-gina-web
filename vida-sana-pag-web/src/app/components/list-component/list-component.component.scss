@@ -1,17 +1,17 @@
 body {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 .banner {
-background: #a770ef;
-background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
 }
 
 
-#fotos{
+/* #fotos{
   display:  flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   list-style-type: none;
 }
 
@@ -28,4 +28,16 @@ ul#fotos {
   box-sizing: content-box;
 }
 
+ */
 
+ .fotos{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  box-sizing: border-box;
+ }
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
