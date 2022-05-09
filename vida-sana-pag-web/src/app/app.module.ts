@@ -13,6 +13,8 @@ import { LoginScreenComponent } from './screens/login-screen/login-screen.compon
 import { SigninScreenComponent } from './screens/signin-screen/signin-screen.component';
 import { ListComponentComponent } from './components/list-component/list-component.component';
 import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.component';
+import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-receta-screen.component';
+import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.
     LoginScreenComponent,
     SigninScreenComponent,
     GaleriaScreenComponent,
-    ListComponentComponent
+    ListComponentComponent,
+    ItemRecetaScreenComponent,
+    ItemRutinaScreenComponent
   ],
   imports: [
     BrowserModule,
