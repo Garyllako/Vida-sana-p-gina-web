@@ -1,6 +1,8 @@
 # Vida-sana-pagina-web
 Proyecto ingeniería web
 
+__La rama correspondiente a la entrega 2 es Avances-Entrega2__
+
 Integrantes:
 -Fabián Lastra
 -Luciano Donoso
