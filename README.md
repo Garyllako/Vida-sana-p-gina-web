@@ -14,8 +14,8 @@ Funcionalidades:
 5-Buscar receta por nombre/categoría
 6-Buscar rutinas por ejercicio/tipo de ejercicio
 7-Sistema de login
-8-Guardar recetas y rutinas preferidas en favorito
-9-Dar like a recetas y rutinas
+8-Guardar recetas y rutinas preferidas en favoritos
+9-Dar me gusta a recetas y rutinas
 10-(Opcional) Mostrar rutinas y ejercicios acorde a sus preferencias
 11-Forma de contacto con la página
 
@@ -25,9 +25,7 @@ CRUD(Crear,Leer,Actualizar,Eliminar):
 3.-Leer rutina
 4.-Actualizar/Eliminar rutina
 5.-Actualizar lista de recetas
-6.-Actualizar lista de recetas
+6.-Actualizar lista de rutinas
 7.-Actualizar usuario
-8.-Crear/Actualizar/Eliminar recetas y rutinas faavoritas
-9.-Actualizar recetas y rutinas
-10.-(Opcional) Actualizar recetas/rutinas
-11.-Leer/Creas/Actualizar formulario de contacto
+8.-Crear rutinas y recetas favoritas
+9.-Leer formulario de contacto
