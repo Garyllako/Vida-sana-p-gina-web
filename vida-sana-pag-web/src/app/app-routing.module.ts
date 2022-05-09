@@ -8,6 +8,7 @@ import { LoginScreenComponent } from './screens/login-screen/login-screen.compon
 import { SigninScreenComponent } from './screens/signin-screen/signin-screen.component';
 import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.component';
 import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-receta-screen.component';
+import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'signin', component: SigninScreenComponent },
   { path: 'galeria', component: GaleriaScreenComponent },
   { path: 'item-receta', component: ItemRecetaScreenComponent },
+  { path: 'item-rutina', component: ItemRutinaScreenComponent },
 
 ];
 @NgModule({

@@ -1,0 +1,44 @@
+.semititulo{
+    font-size: 28px;
+}
+
+img{
+    width: 30%;
+    padding: 30px;
+}
+
+.col-lg-12.mx-auto{
+    text-align: center;
+}
+
+.preparacion{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.row{
+    justify-content: center;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: center;
+    width: 14%;
+    padding: 10px;
+    height: 150px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
