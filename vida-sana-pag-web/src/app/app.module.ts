@@ -15,6 +15,7 @@ import { ListComponentComponent } from './components/list-component/list-compone
 import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.component';
 import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-receta-screen.component';
 import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
+import { BrokenImageDirective } from './broken-image.directive';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rut
     GaleriaScreenComponent,
     ListComponentComponent,
     ItemRecetaScreenComponent,
-    ItemRutinaScreenComponent
+    ItemRutinaScreenComponent,
+    BrokenImageDirective
   ],
   imports: [
     BrowserModule,
