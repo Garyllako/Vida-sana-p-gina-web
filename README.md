@@ -3,7 +3,7 @@ Proyecto ingeniería web
 
 __La rama correspondiente a la entrega 3 es Avances-Entrega3__
 
-##Integrantes:
+## Integrantes:
 
 - Fabián Lastra
 - Luciano Donoso
