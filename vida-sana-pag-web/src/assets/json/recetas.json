@@ -1,85 +1,85 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "title": "Quiche vegetariano con masa de quinoa",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://www.gourmets.cl/wp-content/uploads/2021/08/Quiche_Adaptada_Gourmet.jpg"
   },
   {
-    "id": "2",
+    "id": 2,
     "title": "Tortilla de acelga",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2022/01/tortilla-acelga-video-retocada.jpg"
   },
   {
-    "id": "3",
+    "id": 3,
     "title": "Merluza a la pimienta limón",
-    "category": "",
+    "categoria": "Marisco",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2021/08/Merluza-a-la-Pimienta-Lim%C3%B3n-Web.jpg"
   },
   {
-    "id": "4",
+    "id": 4,
     "title": "Sandwich capresse saludable",
-    "category": "",
+    "categoria": "Sandwich",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2022/02/sandiwch-vegetariano-saludable-web.jpg"
   },
   {
-    "id": "5",
+    "id": 5,
     "title": "Sandwich en pan pita con pollo",
-    "category": "",
+    "categoria": "Sandwich",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2022/02/sandiwch-de-pollo-saludable-web.jpg"
   },
   {
-    "id": "6",
+    "id": 6,
     "title": "Choclos a la parrilla con soya y ají",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://habemusasado.com/wp-content/uploads/2021/06/Como-hacer-choclo-a-la-parrilla.jpg"
   },
   {
-    "id": "7",
+    "id": 7,
     "title": "Guacamole",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   },
   {
-    "id": "8",
+    "id": 8,
     "title": "Salmon con salsa teriyaki",
-    "category": "",
+    "categoria": "Marisco",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2021/08/Salm%C3%B3n-Teriyaki-adaptaba-web.jpg"
   },
   {
-    "id": "9",
+    "id": 9,
     "title": "Hummus de zanahoria",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2020/06/foto-hummus-de-zanahoria-tama%C3%B1o-sitio-web.jpg"
   },
   {
-    "id": "10",
+    "id": 10,
     "title": "Queque de zanahoria",
-    "category": "",
+    "categoria": "Dulce",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2019/01/quequeveganoz7edit.jpg"
   },
   {
-    "id": "11",
+    "id": 11,
     "title": "Pollo a las finas hierbas",
-    "category": "",
+    "categoria": "",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2016/09/Pollo-a-las-finas-hierbas_Web.jpg"
   },
   {
-    "id": "12",
+    "id": 12,
     "title": "Lentejas",
-    "category": "",
+    "categoria": "Vegetariano",
     "description": "",
     "url": "https://www.gourmet.cl/wp-content/uploads/2016/09/Foto-sitio-web.jpg"
   }

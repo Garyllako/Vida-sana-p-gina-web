@@ -12,188 +12,23 @@
     </div>
     <!--End Banner-->
 
-    <div class="row">
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img appBrokenImage src="https://www.gourmets.cl/wp-content/uploads/2021/08/Quiche_Adaptada_Gourmet.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Quiche vegetariano con masa de quinoa</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Vegetal</div>
-            </div>
+    <div class="row" >
+
+      <!--Items-->
+    <div class="col-xl-3 col-lg-4 col-md-6 mb-4" *ngFor="let receta of Recetas">
+      <div class="bg-white rounded shadow-sm"><img src="{{ receta.url }}" alt="" class="img-fluid card-img-top">
+        <div class="p-4">
+          <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']"> {{ receta.title }}</a></h5>
+          <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+            <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
+            <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-warning"> {{ receta.categoria }}</div>
           </div>
         </div>
       </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-
-        <div class="bg-white rounded shadow-sm"><img appBrokenImage src="https://www.gourmet.cl/wp-content/uploads/2022/01/tortilla-acelga-video-retocada.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Tortilla de acelga</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-primary px-3 rounded-pill font-weight-normal btn-danger">Trend</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2021/08/Merluza-a-la-Pimienta-Lim%C3%B3n-Web.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Merluza a la pimienta limón </a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white btn-warning">Featured</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2022/02/sandiwch-vegetariano-saludable-web.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Sandwich capresse saludable</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-success">Hot</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2022/02/sandiwch-de-pollo-saludable-web.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Sandwich en pan pita con pollo</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-primary px-3 rounded-pill font-weight-normal btn-secondary">New</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm" [routerLink]="['/item-receta']"><img src="https://habemusasado.com/wp-content/uploads/2021/06/Como-hacer-choclo-a-la-parrilla.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark">Choclos a la parrilla con soya y ají</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white btn-primary">Featured</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://images.pexels.com/photos/5737254/pexels-photo-5737254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Guacamole</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-info px-3 rounded-pill font-weight-normal btn-danger">Vegano</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2021/08/Salm%C3%B3n-Teriyaki-adaptaba-web.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Salmón con salsa teriyaki </a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white btn-warning">Featured</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2020/06/foto-hummus-de-zanahoria-tama%C3%B1o-sitio-web.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Hummus de zanahoria</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-success">Vegetariano</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2019/01/quequeveganoz7edit.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Queque de zanahoria</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-primary px-3 rounded-pill font-weight-normal btn-warning">Vegano</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2016/09/Pollo-a-las-finas-hierbas_Web.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Pollo a las finas hierbas</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-warning px-3 rounded-pill font-weight-normal text-white btn-warning">Vegano</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.gourmet.cl/wp-content/uploads/2016/09/Foto-sitio-web.jpg" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-receta']">Lentejas</a></h5>
-            <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-warning">Hot</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
+    </div>
+      <!--Items-->
+      
     </div>
     <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Show me more</a></div>
   </div>

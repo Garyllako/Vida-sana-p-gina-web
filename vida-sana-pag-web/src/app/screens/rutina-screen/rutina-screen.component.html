@@ -12,186 +12,22 @@
     </div>
     <!--End Banner-->
 
-    <div class="row">
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://blog.smartfit.com.mx/wp-content/uploads/2021/01/beneficios-de-las-flexiones-cerradas.png" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Flexiones de brazos</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
+    <div class="row" >
 
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://media.glamour.es/photos/616f71bb38abdad04f453327/master/w_1600%2Cc_limit/650689.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Sentadillas</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
+      <!--Items-->
+    <div class="col-xl-3 col-lg-4 col-md-6 mb-4" *ngFor="let rutina of Rutinas">
+      <div class="bg-white rounded shadow-sm"><img src="{{ rutina.url }}" alt="" class="img-fluid card-img-top">
+        <div class="p-4">
+          <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']"> {{ rutina.title }}</a></h5>
+          <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+            <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
+            <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-warning"> {{ rutina.categoria }}</div>
           </div>
         </div>
       </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://www.hola.com/imagenes/estar-bien/20200226161563/ejercicios-abdominales-protegiendo-espalda/0-789-208/abdominales-a.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Abdominales</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://img.freepik.com/vector-gratis/personaje-rostro-levantamiento-pesas-levantamiento-pesas-femenino-color-plano_151150-2073.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Levantaiento de pesas</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://rutinaejercicio.com/wp-content/uploads/2018/12/136.gif" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Saltos de cuerda</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Resistencia</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://thumbs.dreamstime.com/z/bench-triceps-dips-gu%C3%ADa-de-ejercicio-femenino-ilustraci%C3%B3n-colorida-colorido-concepto-entrenamiento-fitness-para-ni%C3%B1as-mujer-197852557.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Fondos de tríceps</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://i.blogs.es/b5d57f/dominadas/1366_2000.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Dominadas tradicionales</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://media.vogue.es/photos/5fd243f80800022c258951da/master/w_1600%2Cc_limit/tabla-de-ejercicios2-4.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Plancha</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://thumbs.dreamstime.com/z/hombre-que-hace-estocadas-hacer-ejercicios-del-deporte-en-gimnasio-entrenamiento-de-la-pierna-edificio-m%C3%BAsculo-forma-vida-sana-y-142390949.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Estocadas</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Resistencia</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://media.istockphoto.com/vectors/pullup-on-the-crossbar-male-athlete-performs-the-exercise-sports-vector-id1059323414" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Levantamiento de barbilla</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Fuerza</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkA9ZgR0mwhvJLfpUPnnNRcLbiOn-cj6T4A&usqp=CAU" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Natación</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Resistencia</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
-
-      <!-- Gallery item -->
-      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><img src="https://i.pinimg.com/550x/91/c1/c0/91c1c0bfb2595ab50e53f12731feb8c7.jpg" width="376px" height= "250.66px" alt="" class="img-fluid card-img-top">
-          <div class="p-4">
-            <h5> <a href="#" class="text-dark" [routerLink]="['/item-rutina']">Ciclismo</a></h5>
-            <p class="small text-muted mb-0">Explicación</p>
-            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
-              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">Categoria</span></p>
-              <div class="badge badge-danger px-3 rounded-pill font-weight-normal btn-primary">Resistencia</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End -->
+    </div>
+      <!--Items-->
 
     </div>
     <div class="py-5 text-right"><a href="#" class="btn btn-dark px-5 py-3 text-uppercase">Muestrame Más</a></div>

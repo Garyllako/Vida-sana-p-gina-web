@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Flexiones de brazo",
+    "categoria": "Resistencia",
+    "description": "",
+    "url": "https://blog.smartfit.com.mx/wp-content/uploads/2021/01/beneficios-de-las-flexiones-cerradas.png"
+  },
+  {
+    "id": 2,
+    "title": "Sentadillas",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://media.glamour.es/photos/616f71bb38abdad04f453327/master/w_1600%2Cc_limit/650689.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Abdominales",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://www.hola.com/imagenes/estar-bien/20200226161563/ejercicios-abdominales-protegiendo-espalda/0-789-208/abdominales-a.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Levantamiento de pesas",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://img.freepik.com/vector-gratis/personaje-rostro-levantamiento-pesas-levantamiento-pesas-femenino-color-plano_151150-2073.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Saltos de cuerda",
+    "categoria": "Resistencia",
+    "description": "",
+    "url": "https://rutinaejercicio.com/wp-content/uploads/2018/12/136.gif"
+  },
+  {
+    "id": 6,
+    "title": "Fondos de tríceps",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://thumbs.dreamstime.com/z/bench-triceps-dips-gu%C3%ADa-de-ejercicio-femenino-ilustraci%C3%B3n-colorida-colorido-concepto-entrenamiento-fitness-para-ni%C3%B1as-mujer-197852557.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Dominadas tradicionales",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://i.blogs.es/b5d57f/dominadas/1366_2000.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Planchas",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://media.vogue.es/photos/5fd243f80800022c258951da/master/w_1600%2Cc_limit/tabla-de-ejercicios2-4.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Estocadas",
+    "categoria": "Resistencia",
+    "description": "",
+    "url": "https://thumbs.dreamstime.com/z/hombre-que-hace-estocadas-hacer-ejercicios-del-deporte-en-gimnasio-entrenamiento-de-la-pierna-edificio-m%C3%BAsculo-forma-vida-sana-y-142390949.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Levantamiento de barbilla",
+    "categoria": "Fuerza",
+    "description": "",
+    "url": "https://media.istockphoto.com/vectors/pullup-on-the-crossbar-male-athlete-performs-the-exercise-sports-vector-id1059323414"
+  },
+  {
+    "id": 11,
+    "title": "Natación",
+    "categoria": "Resistencia",
+    "description": "",
+    "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkA9ZgR0mwhvJLfpUPnnNRcLbiOn-cj6T4A&usqp=CAU"
+  },
+  {
+    "id": 12,
+    "title": "Ciclismo",
+    "categoria": "Resistencia",
+    "description": "",
+    "url": "https://i.pinimg.com/550x/91/c1/c0/91c1c0bfb2595ab50e53f12731feb8c7.jpg"
+  }
+]
