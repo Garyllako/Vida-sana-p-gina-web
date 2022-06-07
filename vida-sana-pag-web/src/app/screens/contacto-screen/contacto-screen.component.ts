@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms'
 declare var $: any;
 
 @Component({
@@ -7,28 +8,19 @@ declare var $: any;
   styleUrls: ['./contacto-screen.component.scss']
 })
 export class ContactoScreenComponent implements OnInit {
+ 
+  contactForm = new FormGroup({
+    nombre: new FormControl('',Validators.required),
+    email: new FormControl('',Validators.required),
+    asunto: new FormControl(''),
+    texto: new FormControl('',Validators.required),
+  })
 
-  
-  constructor() { 
-    let formulario:any= document.getElementById("formulario");
-    if(formulario){
-        formulario?.addEventListener("submit", function(e:any){
-          e.preventDefault();
-          let nombre:any = document.getElementById('nombre');
-          if(nombre ==='hola'){
-            alert('hola');
-          }
-          console.log(nombre.value);
-          let email:any = document.getElementById('email');
-          console.log(email.value);
-          let mensaje:any = document.getElementById('mensaje');
-          console.log(mensaje.value);
-          console.log("Formulario enviado");
-      });
-    }
-  }
+  get nombre(){return this.contactForm.get('nombre')}
 
-  
+  get email(){return this.contactForm.get('email')}
+
+  get texto(){return this.contactForm.get('texto')}
 
   ngOnInit(): void {
   }
