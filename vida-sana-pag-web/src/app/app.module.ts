@@ -17,6 +17,7 @@ import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-rec
 import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
 import { BrokenImageDirective } from './broken-image.directive';
 import {ReactiveFormsModule} from  '@angular/forms'
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {ReactiveFormsModule} from  '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
