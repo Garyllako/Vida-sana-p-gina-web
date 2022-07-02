@@ -10,5 +10,5 @@ app.use('/api/usuarios', require('./routes/usuario')); // Ruta para el usuario
 
 
 app.listen(4000, () => {
-    console.log("listening on port 4000");
+    console.log('\x1b[1m\x1b[42mlistening on port 4000\x1b[0m');
 });
