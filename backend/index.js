@@ -3,11 +3,11 @@ const conectarDB = require('./config/db');
 
 const app = express();
 
-conectarDB();
+conectarDB(); // Conectar a la base de datos
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
-})
+app.use(express.json()) // Permite que se puedan recibir datos en formato json
+app.use('/api/usuarios', require('./routes/usuario')); // Ruta para el usuario
+
 
 app.listen(4000, () => {
     console.log("listening on port 4000");
