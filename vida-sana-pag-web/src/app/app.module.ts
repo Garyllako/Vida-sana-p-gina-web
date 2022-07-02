@@ -18,6 +18,7 @@ import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rut
 import { BrokenImageDirective } from './broken-image.directive';
 import {ReactiveFormsModule} from  '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
+import { CrearRecetaScreenComponent } from './screens/crear-receta-screen/crear-receta-screen.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     ListComponentComponent,
     ItemRecetaScreenComponent,
     ItemRutinaScreenComponent,
-    BrokenImageDirective
+    BrokenImageDirective,
+    CrearRecetaScreenComponent
   ],
   imports: [
     BrowserModule,

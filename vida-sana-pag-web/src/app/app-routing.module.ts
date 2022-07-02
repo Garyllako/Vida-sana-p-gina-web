@@ -9,6 +9,7 @@ import { SigninScreenComponent } from './screens/signin-screen/signin-screen.com
 import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.component';
 import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-receta-screen.component';
 import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
+import { CrearRecetaScreenComponent } from './screens/crear-receta-screen/crear-receta-screen.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   { path: 'galeria', component: GaleriaScreenComponent },
   { path: 'item-receta', component: ItemRecetaScreenComponent },
   { path: 'item-rutina', component: ItemRutinaScreenComponent },
+  { path: 'crear-receta', component: CrearRecetaScreenComponent },
+  
+  
+  //{ path: 'agregar-prueba', component: ItemRutinaScreenComponent },
 
 ];
 @NgModule({
