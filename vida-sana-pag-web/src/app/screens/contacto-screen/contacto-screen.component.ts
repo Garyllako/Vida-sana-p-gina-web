@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms'
+import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms'
 declare var $: any;
 
 @Component({
@@ -9,11 +9,11 @@ declare var $: any;
 })
 export class ContactoScreenComponent implements OnInit {
  
-  contactForm = new FormGroup({
-    nombre: new FormControl('',Validators.required),
-    email: new FormControl('',Validators.required),
-    asunto: new FormControl(''),
-    texto: new FormControl('',Validators.required),
+  contactForm = new UntypedFormGroup({
+    nombre: new UntypedFormControl('',Validators.required),
+    email: new UntypedFormControl('',Validators.required),
+    asunto: new UntypedFormControl(''),
+    texto: new UntypedFormControl('',Validators.required),
   })
 
   get nombre(){return this.contactForm.get('nombre')}

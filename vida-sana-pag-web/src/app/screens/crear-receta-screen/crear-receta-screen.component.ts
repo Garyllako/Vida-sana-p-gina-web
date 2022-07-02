@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Receta } from '../../models/receta.model';
@@ -12,11 +12,11 @@ import { RecetaService } from '../../services/receta.service';
   styleUrls: ['./crear-receta-screen.component.scss']
 })
 export class CrearRecetaScreenComponent implements OnInit {
-  recetaForm: FormGroup;
+  recetaForm: UntypedFormGroup;
   titulo = 'Crear receta';
   id: string | null;
 
-  constructor(private fb: FormBuilder,
+  constructor(private fb: UntypedFormBuilder,
     private router: Router,
     private toastr: ToastrService,
     private _recetaService: RecetaService,
