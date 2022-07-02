@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { RecetaService } from '../../services/receta.service';
+import { Receta } from '../../models/receta.model';
+
 
 @Component({
   selector: 'app-item-receta-screen',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-receta-screen.component.scss']
 })
 export class ItemRecetaScreenComponent implements OnInit {
-
-  constructor() { }
+  ListaReceta = new Array <Receta>();
+  constructor(private http:RecetaService ) { }
 
   ngOnInit(): void {
+    this.http.getRecetas().subscribe(
+      (data) => {
+        this.ListaReceta = data;
+      }
+    )
   }
-
 }

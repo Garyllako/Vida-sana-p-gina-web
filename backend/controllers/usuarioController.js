@@ -26,9 +26,7 @@ exports.obtenerUsuarioById = async (req, res) => { // Obtener un usuario por id
 exports.crearUsuario =  async (req, res) => { // Crear un usuario
     try {
         let usuario;
-
         usuario = new Usuario(req.body);
-
         await usuario.save(); 
         res.send(usuario);
 
@@ -57,3 +55,14 @@ exports.eliminarUsuario = async (req, res) => { // Eliminar un usuario
         res.status(500).send('Ha ocurrido un error');
     }
 }
+
+exports.authentication = async (req, res) => { // Autenticar un usuario
+    try {
+        const usuario = await Usuario.findOne({email: req.body.email, password: req.body.password}); 
+        if (!usuario) return res.status(404).send('El usuario no existe');
+        res.json(usuario);
+    } catch (error) {
+        res.status(500).send('Ha ocurrido un error');
+    }
+}
+

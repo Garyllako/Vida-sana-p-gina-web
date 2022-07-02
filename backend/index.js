@@ -8,6 +8,8 @@ conectarDB(); // Conectar a la base de datos
 
 app.use(cors());
 app.use(express.json()) // Permite que se puedan recibir datos en formato json
+
+
 app.use('/api/usuarios', require('./routes/usuario')); // Ruta para el usuario
 app.use('/api/recetas', require('./routes/receta')); // Ruta para las recetas
 
