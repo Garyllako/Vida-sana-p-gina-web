@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
-import { Receta } from '../../models/receta.model';
-import { RecetaService } from '../../services/receta.service';
-
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-crear-receta-screen',
@@ -12,62 +8,18 @@ import { RecetaService } from '../../services/receta.service';
   styleUrls: ['./crear-receta-screen.component.scss']
 })
 export class CrearRecetaScreenComponent implements OnInit {
-  recetaForm: UntypedFormGroup;
-  titulo = 'Crear receta';
-  id: string | null;
-
-  constructor(private fb: UntypedFormBuilder,
-    private router: Router,
-    private toastr: ToastrService,
-    private _recetaService: RecetaService,
-    private aRouter: ActivatedRoute) { 
-    this.recetaForm = this.fb.group({
-    producto: ['', Validators.required],
-    categoria: ['', Validators.required],
-    ubicacion: ['', Validators.required],
-    precio: ['', Validators.required],
-  })
-this.id = this.aRouter.snapshot.paramMap.get('id');
-}
+  
+  constructor(private http:HttpClient){}
+  onSubmit(data:any){
+    this.http.post('http://localhost:4000/api/recetas', data)
+    .subscribe((result)=>{
+      console.warn("result",result)
+    })
+    console.log(data);
+  }
 
   ngOnInit(): void {
   }
-
-  agregarReceta() {
-
-    const RECETA: Receta = {
-      nombre: this.recetaForm.get('producto')?.value,
-      categoria: this.recetaForm.get('categoria')?.value,
-      url: this.recetaForm.get('url')?.value,
-    }
-
-    console.log(RECETA);
-    this._recetaService.guardarReceta(RECETA).subscribe(data => {
-      this.toastr.success('El producto fue registrado con exito!', 'Producto Registrado!');
-      this.router.navigate(['/']);
-    }, error => {
-      console.log(error);
-      this.recetaForm.reset();
-    })
-
-  
-  }
-
-  esEditar() {
-
-    if(this.id !== null) {
-      this.titulo = 'Editar receta';
-      this._recetaService.obtenerReceta(this.id).subscribe(data => {
-        this.recetaForm.setValue({
-          producto: data.nombre,
-          categoria: data.categoria,
-          ubicacion: data.ubicacion,
-          precio: data.precio,
-        })
-      })
-    }
-  }
-
 }
 
 

@@ -22,7 +22,7 @@ export class RecetaService {
     
     eliminarReceta(id: string): Observable<any> {
     return this.http.delete(this.url + id);
-    }
+    }  
 
     guardarReceta(receta: Receta): Observable<any> {
     return this.http.post(this.url, receta);

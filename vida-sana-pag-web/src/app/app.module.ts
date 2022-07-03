@@ -16,9 +16,11 @@ import { GaleriaScreenComponent } from './screens/galeria-screen/galeria-screen.
 import { ItemRecetaScreenComponent } from './screens/item-receta-screen/item-receta-screen.component';
 import { ItemRutinaScreenComponent } from './screens/item-rutina-screen/item-rutina-screen.component';
 import { BrokenImageDirective } from './broken-image.directive';
-import {ReactiveFormsModule} from  '@angular/forms'
+import { FormsModule } from  '@angular/forms'
+import { ReactiveFormsModule } from  '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { CrearRecetaScreenComponent } from './screens/crear-receta-screen/crear-receta-screen.component';
+import { RecetaService } from './services/receta.service';
 
 
 @NgModule({
@@ -37,16 +39,17 @@ import { CrearRecetaScreenComponent } from './screens/crear-receta-screen/crear-
     ItemRecetaScreenComponent,
     ItemRutinaScreenComponent,
     BrokenImageDirective,
-    CrearRecetaScreenComponent
+    CrearRecetaScreenComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [RecetaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
