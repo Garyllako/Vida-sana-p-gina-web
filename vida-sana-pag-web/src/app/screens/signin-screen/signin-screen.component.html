@@ -1,67 +1,36 @@
-<div class="container-fluid">
-  <div class="px-lg-5">
-<form>
-  <div class="text-center mb-3">
-    <p>Registrarse con:</p>
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-facebook-f"></i>
-    </button>
 
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-google"></i>
-    </button>
+<div class="row justify-content-center my-5">
+  <div class="col-sm-6">
+    <div class="titulo">
+      <h1> Registro de usuario </h1>
+    </div>
+    <div class = "formulario">
+      <div *ngIf="!activarMsg">
+        <form #userPost="ngForm" (ngSubmit)="validacion()" novalidate> <!-- (ngSubmit)="onSubmit(userPost.value) --> 
+    
+          <label name="nombreComida" for="nombreComida" class="form-label">Nombre de usuario:</label>
+          <input name="nombre" type="text" id="nombreComida" placeholder="Ingrese el nombre de la comida" class="form-control" ngModel/>
+    
+          <label name="categoriaComida" for="categoriaComida" class="form-label">Correo:</label>
+          <input name="categoria" type="text" id="categoriaComida" placeholder="Ingrese la categoría" class="form-control" ngModel/>
+    
+    
+          <label name="urlComida" for="urlComida" class="form-label">Contraseña:</label>
+          <input name="url" type="text" id="urlComida" placeholder="Ingrese la URL de la imagen" class="form-control" ngModel/>
+    
+          <button type="submit" class="btn btn-outline-success my-5" >Registrarse</button>
+        </form>
+      </div>
+    </div>
 
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-twitter"></i>
-    </button>
+    <div *ngIf="activarMsg">
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading"></h4>
+        <p>Usuario creado exitosamente!</p>
+        <p class="mb-0"></p>
+      </div>
+      <button type="submit" class="btn btn-primary my-5" [routerLink]="['/home']" >Continuar</button>
+    </div>
 
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-github"></i>
-    </button>
   </div>
-
-  <p class="text-center">o</p>
-
-  <!-- Name input -->
-  <div class="form-outline mb-4">
-    <input type="text" id="registerName" class="form-control">
-    <label class="form-label" for="registerName" style="margin-left: 0px;">Nombre</label>
-  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
-
-  <!-- Username input -->
-  <div class="form-outline mb-4">
-    <input type="text" id="registerUsername" class="form-control">
-    <label class="form-label" for="registerUsername" style="margin-left: 0px;">Nombre de usuario</label>
-  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 66.4px;"></div><div class="form-notch-trailing"></div></div></div>
-
-  <!-- Email input -->
-  <div class="form-outline mb-4">
-    <input type="email" id="registerEmail" class="form-control">
-    <label class="form-label" for="registerEmail" style="margin-left: 0px;">Correo electrónico</label>
-  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
-
-  <!-- Password input -->
-  <div class="form-outline mb-4">
-    <input type="password" id="registerPassword" class="form-control">
-    <label class="form-label" for="registerPassword" style="margin-left: 0px;">Contraseña</label>
-  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
-
-  <!-- Repeat Password input -->
-  <div class="form-outline mb-4">
-    <input type="password" id="registerRepeatPassword" class="form-control">
-    <label class="form-label" for="registerRepeatPassword" style="margin-left: 0px;">Repetir contraseña</label>
-  <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 106.4px;"></div><div class="form-notch-trailing"></div></div></div>
-
-  <!-- Checkbox -->
-  <div class="form-check d-flex justify-content-center mb-4">
-    <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked="" aria-describedby="registerCheckHelpText">
-    <label class="form-check-label" for="registerCheck">
-      He leído y acepto los términos y condiciones de uso
-    </label>
-  </div>
-
-  <!-- Submit button -->
-  <button type="submit" class="position-relative top-100 start-50 translate-middle btn btn-primary btn-block mb-3">Registrarse</button>
-</form>
-</div>
 </div>
