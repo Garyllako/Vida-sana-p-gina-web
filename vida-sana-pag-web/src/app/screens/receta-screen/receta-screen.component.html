@@ -12,6 +12,39 @@
     </div>
     <!--End Banner-->
 
+    <!--<div class="row justify-content-center my-5">
+      <div class="col-lg-6">
+        <label for="subject" class="form-label">Operación</label>
+        <select name="subject" id="subject" class="form-select">
+          <option value="agregar">Agregar</option>
+          <option value="editar">Editar</option>
+          <option value="eliminar">Eliminar</option>
+        </select>
+      </div>
+    </div>-->
+
+    <div class="row justify-content-center my-5">
+      <div class="col-lg-6">
+        <form>
+          <div class="form-floating my-5">
+            <input name="nombreComida" type="nombreComida" id="nombreComida" placeholder="Ingrese el nombre de la comida" class="form-control"/>
+            <label name="nombreComida" for="nombreComida" class="form-label">Comida:</label>
+          </div>
+          <div class="form-floating my-5">
+            <textarea 
+            name="recetaComida" 
+            id="recetaComida" 
+            style="height:150px" 
+            class="form-control"
+            placeholder="Receta" 
+            ></textarea>
+            <label name="recetaComida" for="recetaComida" >Receta:</label>
+          </div>
+          <button type="submit" class="btn btn-outline-success my-5">Agregar</button>
+        </form>
+      </div>
+    </div>
+
     <button type="button" class="btn btn-outline-success">Agregar</button>
     <button type="button" class="btn btn-outline-secondary">Editar</button>
     <button type="button" class="btn btn-outline-danger">Eliminar</button>

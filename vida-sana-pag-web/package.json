@@ -31,6 +31,7 @@
     "@angular-devkit/build-angular": "~13.3.5",
     "@angular/cli": "~13.3.5",
     "@angular/compiler-cli": "~13.3.0",
+    "@devprotocol/dev-kit": "^6.7.0",
     "@types/jasmine": "~3.10.0",
     "@types/jquery": "^3.5.14",
     "@types/node": "^12.11.1",
