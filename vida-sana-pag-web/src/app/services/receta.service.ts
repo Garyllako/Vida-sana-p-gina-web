@@ -15,10 +15,6 @@ export class RecetaService {
     getRecetas(): Observable<any> {
         return this.http.get(environment.apiUrl + 'recetas');
     }
-
-/*     getRecetas(): Observable<any> {
-        return this.http.get(this.url);
-      } */
     
     eliminarReceta(id: string): Observable<any> {
     return this.http.delete(this.url + id);

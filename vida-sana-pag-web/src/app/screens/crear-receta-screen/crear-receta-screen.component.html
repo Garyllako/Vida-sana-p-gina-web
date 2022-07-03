@@ -1,3 +1,5 @@
+
+
 <div class="row justify-content-center my-5">
     <div class="col-sm-6">
       <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)"> 
@@ -10,9 +12,10 @@
 
 
         <label name="urlComida" for="urlComida" class="form-label">URL:</label>
-        <input name="url" type="text" id="urlComida" placeholder="Ingrese la URL" class="form-control" ngModel/>
+        <input name="url" type="text" id="urlComida" placeholder="Ingrese la URL de la imagen" class="form-control" ngModel/>
 
-        <button type="submit" class="btn btn-outline-success my-5">Agregar</button>
+        <button type="submit" class="btn btn-outline-success my-5" >Agregar</button>
       </form>
     </div>
   </div>
+

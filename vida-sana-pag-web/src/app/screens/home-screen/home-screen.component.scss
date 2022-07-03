@@ -95,3 +95,9 @@ img{
     margin-top: 7rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container.marketing {
+    text-align: center;
+  }
+}

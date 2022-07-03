@@ -1,4 +1,15 @@
 button {
   margin: 10px;
 }
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+  }
+  .d-flex {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=nav-bar-component.component.css.map */

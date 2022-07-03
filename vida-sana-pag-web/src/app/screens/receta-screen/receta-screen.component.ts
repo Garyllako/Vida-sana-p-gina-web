@@ -21,8 +21,12 @@ export class RecetaScreenComponent implements OnInit {
 
   }
 
+  Services(): void {
+    window.location.reload();
+  }
+
   ngOnInit(): void {
-    this.http.getRecetas().subscribe(
+    this.http.getRecetas().subscribe( 
       (data) => {
         this.ListaReceta = data;
       }
@@ -31,7 +35,7 @@ export class RecetaScreenComponent implements OnInit {
 
   onDelete(idreceta: string) {
   console.log(idreceta);
-   this.http.eliminarReceta(idreceta).subscribe((result) => {
+   this.http.eliminarReceta(idreceta).subscribe((result) => { 
       console.warn("result", result)
     })
     console.log("listo?");

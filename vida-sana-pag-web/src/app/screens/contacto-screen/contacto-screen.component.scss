@@ -23,3 +23,14 @@ input.ng-valid{
     margin-bottom: 5%;
     margin-top: 2%;
 }
+
+@media screen and (max-width: 768px) {
+    .col-sm-6 {
+        flex: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px;
+        text-align: center;
+        
+    }
+  }

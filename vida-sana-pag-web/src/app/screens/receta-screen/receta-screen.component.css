@@ -7,4 +7,10 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#a770ef), color-stop(#cf8bf3), to(#fdb99b));
   background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
 }
+
+#td{
+  cursor: pointer;
+  margin-left: 7px;
+  background-color: #a770ef;
+}
 /*# sourceMappingURL=receta-screen.component.css.map */

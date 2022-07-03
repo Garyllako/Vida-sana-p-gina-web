@@ -13,9 +13,7 @@
     <!--End Banner-->
 
     <button type="button" class="btn btn-outline-success" [routerLink]="['/crear-receta']">Agregar</button>
-
     <button type="button" class="btn btn-outline-secondary">Editar</button>
-    <button type="button" class="btn btn-outline-danger" [routerLink]="['/eliminar-receta']">Eliminar</button>
 
     <div class="row">
 
@@ -31,9 +29,10 @@
               </p>
               <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-warning"> {{ receta.categoria }}
               </div>
-              <div>
-                <i (click)="onDelete(receta._id)" class="fa fa-trash"></i>
-              </div>
+              <td>
+                <i [routerLink]="['/editar-producto', receta._id]" class="fas fa-edit text-primary"></i>
+                <i (click)="onDelete(receta._id)" class="fas fa-trash text-danger" (click)="Services()"></i>
+              </td>
             </div>
           </div>
         </div>

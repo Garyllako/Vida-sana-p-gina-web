@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .row {
+        flex: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px;
+        text-align: center;
+        
+    }
+  }
