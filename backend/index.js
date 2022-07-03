@@ -15,4 +15,5 @@ app.use('/api/recetas', require('./routes/receta')); // Ruta para las recetas
 
 app.listen(4000, () => {
     console.log('\x1b[1m\x1b[42mlistening on port 4000\x1b[0m');
+    
 });

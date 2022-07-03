@@ -1,0 +1,36 @@
+<!-- <div class="row justify-content-center my-5">
+    <div class="col-sm-6">
+      <div class="titulo">
+        <h1> Registro de usuario </h1>
+      </div>
+      <div class = "formulario">
+        <div *ngIf="!activarMsg">
+          <form #userPost="ngForm" (ngSubmit)="validacion()" novalidate>  (ngSubmit)="onSubmit(userPost.value) 
+      
+            <label name="nombreComida" for="nombreComida" class="form-label">Nombre de usuario:</label>
+            <input name="nombre" type="text" id="nombreComida" placeholder="Ingrese el nombre de la comida" class="form-control" ngModel/>
+      
+            <label name="categoriaComida" for="categoriaComida" class="form-label">Correo:</label>
+            <input name="categoria" type="text" id="categoriaComida" placeholder="Ingrese la categoría" class="form-control" ngModel/>
+      
+      
+            <label name="urlComida" for="urlComida" class="form-label">Contraseña:</label>
+            <input name="url" type="text" id="urlComida" placeholder="Ingrese la URL de la imagen" class="form-control" ngModel/>
+      
+            <button type="submit" class="btn btn-outline-success my-5" >Registrarse</button>
+          </form>
+        </div>
+      </div>
+  
+      <div *ngIf="activarMsg">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading"></h4>
+          <p>Usuario creado exitosamente!</p>
+          <p class="mb-0"></p>
+        </div>
+        <button type="submit" class="btn btn-primary my-5" [routerLink]="['/home']" >Continuar</button>
+      </div>
+  
+    </div>
+  </div> -->
+  

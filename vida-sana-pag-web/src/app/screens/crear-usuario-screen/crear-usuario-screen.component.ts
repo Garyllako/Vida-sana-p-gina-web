@@ -4,11 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-signin-screen',
-  templateUrl: './signin-screen.component.html',
-  styleUrls: ['./signin-screen.component.css']
+  selector: 'app-crear-usuario-screen',
+  templateUrl: './crear-usuario-screen.component.html',
+  styleUrls: ['./crear-usuario-screen.component.scss']
 })
-export class SigninScreenComponent implements OnInit {
+export class CrearUsuarioScreenComponent implements OnInit {
   activarMsg:boolean=false;
   constructor(private http:HttpClient){}
   onSubmit(data:any){
@@ -22,8 +22,7 @@ export class SigninScreenComponent implements OnInit {
   ngOnInit(): void {
   }
 
-    validacion(){
+  validacion(){
     this.activarMsg=true;
   }
-
 }
