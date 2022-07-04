@@ -30,10 +30,19 @@
             <span class="error alert-danger" *ngIf="password!.invalid && password!.touched">Su contraseña es requerida</span>
           </div>
 
-          <div class ="captcha">
+          <!-- <div class ="captcha">
+            <re-captcha (resolved)="resolved($event)" siteKey="6LfgfL8gAAAAAIU5Yvg1c5MndZBdwyi4MuYoSxJv"></re-captcha>
+          </div> -->
+          <div [hidden]="captcha">
             <re-captcha (resolved)="resolved($event)" siteKey="6LfgfL8gAAAAAIU5Yvg1c5MndZBdwyi4MuYoSxJv"></re-captcha>
           </div>
-          <button type="submit" class="btn btn-outline-success my-5" [disabled]="!contactForm.valid" >Registrarse</button> 
+
+          <div [hidden]="!captcha">
+            <button type="submit" class="btn btn-outline-success my-5" [disabled]="!contactForm.valid" >Registrarse</button> 
+          </div>
+        
+
+
         </form>
       </div>
     </div>

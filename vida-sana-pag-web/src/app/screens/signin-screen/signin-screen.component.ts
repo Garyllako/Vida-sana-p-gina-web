@@ -42,8 +42,8 @@ export class SigninScreenComponent implements OnInit {
   }
 
   resolved(captchaResponse: string) {
-    console.log(`Resolved captcha with response ${captchaResponse}:`);
     this.captcha = captchaResponse;
+    console.log('Resolved captcha with response ' + this.captcha);
   }
 
 }
