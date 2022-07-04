@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormularioServicioService } from '../../../formulario-servicio.service' ;
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login-screen',
@@ -15,7 +16,7 @@ export class LoginScreenComponent implements OnInit {
 
   constructor(private http:HttpClient){
     this.captcha = '';
-    this.correo = 'lucianodelauc@gmail.com';
+    this.correo = environment.baseEmail;
   }
   onSubmit(data:any){
     this.http.post('http://localhost:4000/api/usuarios', data)
