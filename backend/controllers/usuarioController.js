@@ -1,5 +1,6 @@
 const Usuario = require("../models/Usuario");
-
+var bodyParser = require('body-parser');
+var bcrypt = require('bcrypt');
 
 exports.obtenerUsuarios = async (req, res) => { // Obtener todos los usuarios
     try {
@@ -28,6 +29,8 @@ exports.crearUsuario =  async (req, res) => { // Crear un usuario
     try {
         let usuario;
         usuario = new Usuario(req.body);
+        var BCRYPT_SALT_ROUNDS = 12;
+        usuario.password = await bcrypt.hash(usuario.password, BCRYPT_SALT_ROUNDS);
         await usuario.save(); 
         res.send(usuario);
         console.log("Usuario", usuario.nombre, "creado correctamente");
