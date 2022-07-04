@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./crear-receta-screen.component.css']
 })
 export class CrearRecetaScreenComponent implements OnInit {
+  activarMsg:boolean=false;
   constructor(private http:HttpClient){}
   onSubmit(data:any){
     this.http.post('http://localhost:4000/api/recetas', data)
@@ -16,6 +17,9 @@ export class CrearRecetaScreenComponent implements OnInit {
       console.warn("result",result)
     })
     console.log(data);
+  }
+  validacion(){
+    this.activarMsg=true;
   }
 
   ngOnInit(): void {
