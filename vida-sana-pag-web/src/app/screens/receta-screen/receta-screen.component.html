@@ -15,6 +15,31 @@
     <button type="button" class="btn btn-outline-success" [routerLink]="['/crear-receta']">Agregar</button>
     <button type="button" class="btn btn-outline-secondary">Editar</button>
 
+    <div class="row justify-content-center my-5">
+      <h5>EDITAR</h5>
+      <div class="col-sm-6">
+        <form #productsForm="ngForm" (ngSubmit)="onUpdate(productsForm.value)">
+
+          <label name="nombreComida" for="nombreComida" class="form-label">Comida:</label>
+          <input name="nombre" type="text" id="nombreComida" placeholder="Ingrese el nuevo nombre de la comida"
+            class="form-control" ngModel />
+
+          <label name="categoriaComida" for="categoriaComida" class="form-label">Categoria:</label>
+          <input name="categoria" type="text" id="categoriaComida" placeholder="Ingrese la nueva categoría"
+            class="form-control" ngModel />
+
+
+          <label name="urlComida" for="urlComida" class="form-label">URL:</label>
+          <input name="url" type="text" id="urlComida" placeholder="Ingrese la nueva URL de la imagen"
+            class="form-control" ngModel />
+
+          <button type="submit" class="btn btn-outline-success my-5" (click)="Services()">Editar datos</button>
+        </form>
+      </div>
+    </div>
+
+
+
     <div class="row">
 
       <!--Items-->
@@ -30,7 +55,8 @@
               <div class="badge badge-success px-3 rounded-pill font-weight-normal btn-warning"> {{ receta.categoria }}
               </div>
               <td>
-                <i [routerLink]="['/editar-producto', receta._id]" class="fas fa-edit text-primary"></i>
+                <!-- [routerLink]="['/editar-receta']" -->
+                <i (click)="onEdit(receta._id)" class="fas fa-edit text-primary"></i>
                 <i (click)="onDelete(receta._id)" class="fas fa-trash text-danger" (click)="Services()"></i>
               </td>
             </div>

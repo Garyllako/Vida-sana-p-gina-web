@@ -15,6 +15,10 @@ export class RecetaService {
     getRecetas(): Observable<any> {
         return this.http.get(environment.apiUrl + 'recetas');
     }
+
+    editarReceta(id: string, value: Receta){
+        this.http.put('http://localhost:4000/api/recetas/'+id, value).subscribe();
+      }
     
     eliminarReceta(id: string): Observable<any> {
     return this.http.delete(this.url + id);
