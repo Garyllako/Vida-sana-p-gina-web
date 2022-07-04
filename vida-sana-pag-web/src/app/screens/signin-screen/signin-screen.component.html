@@ -29,7 +29,11 @@
             <input type="password" class="form-control" placeholder="Ingrese su contraseña" formControlName="password" ngModel/>
             <span class="error alert-danger" *ngIf="password!.invalid && password!.touched">Su contraseña es requerida</span>
           </div>
-          <button type="submit" class="btn btn-outline-success my-5" [disabled]="!contactForm.valid" >Registrarse</button>
+
+          <div class ="captcha">
+            <re-captcha (resolved)="resolved($event)" siteKey="6LfgfL8gAAAAAIU5Yvg1c5MndZBdwyi4MuYoSxJv"></re-captcha>
+          </div>
+          <button type="submit" class="btn btn-outline-success my-5" [disabled]="!contactForm.valid" >Registrarse</button> 
         </form>
       </div>
     </div>

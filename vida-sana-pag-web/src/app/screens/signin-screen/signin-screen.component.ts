@@ -3,14 +3,20 @@ import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } 
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-signin-screen',
   templateUrl: './signin-screen.component.html',
   styleUrls: ['./signin-screen.component.css']
 })
 export class SigninScreenComponent implements OnInit {
+  captcha: string;
+  correo: string;
   activarMsg:boolean=false;
-  constructor(private http:HttpClient){}
+  constructor(private http:HttpClient){
+    this.captcha = '';
+    this.correo = 'lucianodelauc@gmail.com';
+  }
   onSubmit(data:any){
     this.http.post('http://localhost:4000/api/usuarios', data)
     .subscribe((result)=>{
@@ -30,8 +36,14 @@ export class SigninScreenComponent implements OnInit {
 
   ngOnInit(): void {
   }
-    validacion(){
+
+  validacion(){
     this.activarMsg=true;
+  }
+
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}:`);
+    this.captcha = captchaResponse;
   }
 
 }

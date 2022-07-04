@@ -21,7 +21,7 @@ import { ReactiveFormsModule } from  '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { CrearRecetaScreenComponent } from './screens/crear-receta-screen/crear-receta-screen.component';
 import { RecetaService } from './services/receta.service';
-
+import { RecaptchaModule } from "ng-recaptcha";
 
 @NgModule({
   declarations: [
@@ -47,7 +47,9 @@ import { RecetaService } from './services/receta.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RecaptchaModule
+
   ],
   providers: [RecetaService],
   bootstrap: [AppComponent]
