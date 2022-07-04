@@ -1,23 +1,35 @@
 
+ 
 <div class="row justify-content-center my-5">
   <div class="col-sm-6">
     <div class="titulo">
       <h1> Registro de usuario </h1>
     </div>
     <div class = "formulario">
-      <div *ngIf="!activarMsg">
-        <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" (ngSubmit)="validacion()"  >
-    
-          <label name="nombreUsuario" for="nombreUsuario" class="form-label">Nombre de usuario:</label>
-          <input name="nombre" type="text" id="nombre" placeholder="Ingrese su nombre de usuario" class="form-control" ngModel/>
-    
-          <label name="emailUsuario" for="emailUsuario" class="form-label">Correo electronico:</label>
-          <input name="email" type="text" id="email" placeholder="Ingrese su correo electronico" class="form-control" ngModel/>
+      <div *ngIf="!activarMsg"> 
+        <form [formGroup]="contactForm"  #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)" (ngSubmit)="validacion()"  >
           
-          <label name="passwordUsuario" for="passwordUsuario" class="form-label">Contraseña:</label>
-          <input name="password" type="text" id="password" placeholder="Ingrese su contraseña" class="form-control" ngModel/>
-    
-          <button type="submit" class="btn btn-outline-success my-5" >Registrarse</button>
+          <div class="form-group my-5">
+
+            <label name="nombreUsuario" for="nombreUsuario" class="form-label">Nombre de usuario:</label>
+            <input type="nombre" class="form-control" placeholder="Ingrese su nombre" formControlName="nombre" ngModel/> <!-- formControlName="nombre" -->
+            <span class="error alert-danger" *ngIf="nombre!.invalid && nombre!.touched">Su nombre de usuario es requerido</span>
+          </div>
+
+          <div class="form-group my-5">
+            
+            <label name="emailUsuario" for="emailUsuario" class="form-label">Correo electronico:</label>
+            <input type="email" class="form-control" placeholder="Ingrese su correo electrónico" formControlName="email" ngModel/> <!-- formControlName="email" -->
+            <span class="error alert-danger" *ngIf="email!.invalid && email!.touched">Su correo electrónico es requerido</span>
+          </div>
+          
+          <div class="form-group my-5">
+            
+            <label name="passwordUsuario" for="passwordUsuario" class="form-label">Contraseña:</label>
+            <input type="password" class="form-control" placeholder="Ingrese su contraseña" formControlName="password" ngModel/>
+            <span class="error alert-danger" *ngIf="password!.invalid && password!.touched">Su contraseña es requerida</span>
+          </div>
+          <button type="submit" class="btn btn-outline-success my-5" [disabled]="!contactForm.valid" >Registrarse</button>
         </form>
       </div>
     </div>
@@ -31,5 +43,5 @@
       <button type="submit" class="btn btn-primary my-5" [routerLink]="['/home']" >Continuar</button>
     </div>
 
-  </div>
-</div>
+
+

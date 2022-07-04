@@ -18,10 +18,18 @@ export class SigninScreenComponent implements OnInit {
     })
     console.log(data);
   }
+  contactForm = new UntypedFormGroup({
+    nombre: new UntypedFormControl('',Validators.required),
+    email: new UntypedFormControl('',Validators.required),
+    password: new UntypedFormControl('',Validators.required),
+  })
+
+  get nombre(){return this.contactForm.get('nombre')}
+  get email(){return this.contactForm.get('email')}
+  get password(){return this.contactForm.get('password')}
 
   ngOnInit(): void {
   }
-
     validacion(){
     this.activarMsg=true;
   }
