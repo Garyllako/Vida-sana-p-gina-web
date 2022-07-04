@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormularioServicioService } from '../../../formulario-servicio.service' ;
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login-screen',
@@ -8,16 +9,28 @@ import { FormularioServicioService } from '../../../formulario-servicio.service'
   styleUrls: ['./login-screen.component.scss']
 })
 export class LoginScreenComponent implements OnInit {
-
+  captcha: string;
+  correo: string;
   activarMsg:boolean=false;
 
-  formulario:FormGroup | any;
-  constructor(public FormB:FormBuilder, public Servicio:FormularioServicioService){
-    this.formulario=this.FormB.group({
-      email: ["", Validators.required],
-      contraseña: ["", Validators.required]
-    })
+  constructor(private http:HttpClient){
+    this.captcha = '';
+    this.correo = 'lucianodelauc@gmail.com';
   }
+  onSubmit(data:any){
+    this.http.post('http://localhost:4000/api/usuarios', data)
+    .subscribe((result)=>{
+      console.warn("result",result)
+    })
+    console.log(data);
+  }
+  contactForm = new UntypedFormGroup({
+    email: new UntypedFormControl('',Validators.required),
+    password: new UntypedFormControl('',Validators.required),
+  })
+
+  get email(){return this.contactForm.get('email')}
+  get password(){return this.contactForm.get('password')}
 
   ngOnInit(): void {
   }
@@ -25,8 +38,12 @@ export class LoginScreenComponent implements OnInit {
   validacion(){
     //console.log(this.formulario.value);
     this.activarMsg=true;
-
-    this.Servicio.EnviarDatos({"email":this.formulario.get("email")?.value,"contraseña":this.formulario.get("contraseña")?.value});
   }
+  
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response ${captchaResponse}:`);
+    this.captcha = captchaResponse;
+  }
+
 
 }
